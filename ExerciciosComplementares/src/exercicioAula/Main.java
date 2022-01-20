@@ -35,7 +35,8 @@ public class Main {
 		pastelaria.adicionarTrabalhador(trabalhador3);
 		pastelaria.adicionarTrabalhador(trabalhador4);
 		pastelaria.adicionarTrabalhador(trabalhador5);
-
+		System.out.println("\nSaldo inicial da Empresa: " + pastelaria.getFundoDeCaixa() + "€\n");
+		
 		for (Trabalhador trb : pastelaria.getTrabalhadores()) {
 			trb.trabalhar();
 
@@ -48,6 +49,12 @@ public class Main {
 					+ trb.getCarteira() + "€");
 
 		}
+		System.out.println("\nSaldo atual da Empresa: " + pastelaria.getFundoDeCaixa() + "€");
 	}
 
 }
+//dia1 dia 30 apaga funcionarios
+//pasar trabalhadores a otra empresa
+//experimentar
+
+//criar classe trabalhador em que tenha uma interface, y metodos tal.
