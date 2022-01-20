@@ -1,8 +1,7 @@
 package exercicioAula;
+
 //enumerador
 public enum TipoDivisao {
-WC,
-Cozinha,
-Escritorio,
+	WC, Cozinha, Escritorio,
 
 }
