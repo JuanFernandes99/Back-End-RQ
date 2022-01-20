@@ -56,5 +56,5 @@ public class Main {
 //dia1 dia 30 apaga funcionarios
 //pasar trabalhadores a otra empresa
 //experimentar
-
+//treinar hierarquia trabalhador subclasses operario chefe etc. (funcoespropias) tambem
 //criar classe trabalhador em que tenha uma interface, y metodos tal.
