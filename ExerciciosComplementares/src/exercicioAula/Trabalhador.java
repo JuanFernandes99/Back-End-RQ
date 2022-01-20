@@ -14,7 +14,7 @@ public class Trabalhador implements TrabalhadorInterface {
 	}
 
 	public void trabalhar() {
-
+		System.out.println("Eu sou " + nome + " e estou a trabalhar");
 	}
 
 	public void recebeSalario() {

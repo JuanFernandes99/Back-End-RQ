@@ -35,13 +35,19 @@ public class Main {
 		pastelaria.adicionarTrabalhador(trabalhador3);
 		pastelaria.adicionarTrabalhador(trabalhador4);
 		pastelaria.adicionarTrabalhador(trabalhador5);
-		
 
 		for (Trabalhador trb : pastelaria.getTrabalhadores()) {
-System.out.println("Trabalhador: " + trb.getNome() + ", Cargo: " + trb.getCargo());
-		
+			trb.trabalhar();
+
 		}
-		
+		System.out.println("\n… dia de receber!\n");
+
+		pastelaria.pagarTrabalhadores();
+		for (Trabalhador trb : pastelaria.getTrabalhadores()) {
+			System.out.println("Trabalhador: " + trb.getNome() + ", Cargo: " + trb.getCargo() + ", Carteira: "
+					+ trb.getCarteira() + "Ä");
+
+		}
 	}
-	
+
 }
