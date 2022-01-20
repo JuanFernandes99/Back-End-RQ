@@ -4,10 +4,11 @@ public class Trabalhador implements TrabalhadorInterface {
 	private String nome;
 	private double salario;
 	private double carteira;
-
-	public Trabalhador(String aNome, double aSalario) {
+    private String cargo;
+	public Trabalhador(String aNome, double aSalario, String aCargo) {
 		nome = aNome;
 		salario = aSalario;
+		cargo = aCargo;
 		carteira = 0;
 
 	}
@@ -19,6 +20,12 @@ public class Trabalhador implements TrabalhadorInterface {
 	public void recebeSalario() {
 		carteira = carteira + salario;
 	}
+
+	public String getCargo() {
+		return cargo;
+	}
+
+	
 
 	public String getNome() {
 		return nome;
@@ -42,6 +49,9 @@ public class Trabalhador implements TrabalhadorInterface {
 
 	public void setNome(String aNome) {
 		this.nome = aNome;
+	}
+	public void setCargo(String aCargo) {
+		this.cargo = aCargo;
 	}
 
 }

@@ -29,6 +29,7 @@ public class Empresa implements EmpresaInterface {
 
 	}
 
+
 	@Override
 	public void cobraClientes(double aValor) {
 		fundoDeCaixa += aValor;
