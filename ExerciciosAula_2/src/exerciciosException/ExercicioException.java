@@ -37,8 +37,21 @@ public class ExercicioException {
 			} catch (StringIndexOutOfBoundsException e) {
 				System.out.println("Não é possível porque: " + e.getMessage() + " Tente novamente\n");
 			}
+			try {
+				Scanner consolaa = new Scanner(System.in);
+				int numero = consolaa.nextInt();
+				if(numero <10) {
+					throw new NumeroException();
+					
+			}
+				correto = true;
+				consolaa.close();
+			} catch(NumeroException e) {
+				System.out.println("Não é possível porque: " + e.getMessage() + " Tente novamente\n");
+			}
+			
 		}
 
+	
 	}
-
 }
