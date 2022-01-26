@@ -24,7 +24,7 @@ public class Main {
 
 		// sempre nomes explicativos
 
-		Trabalhador trabalhador1 = new Trabalhador("Juan", 1000, "Chefe");
+		Trabalhador trabalhador1 = new Trabalhador("Juan", 500, "Operador");
 		Trabalhador trabalhador2 = new Trabalhador("Pedro", 2000, "Diretor Financeiro");
 		Trabalhador trabalhador3 = new Trabalhador("Diego", 3000, "Ajudante");
 		Trabalhador trabalhador4 = new Trabalhador("Carlos", 4000, "Padeiro");
