@@ -1,4 +1,4 @@
-package exercicioEmpresa;
+package exercicioAula;
 
 public interface EmpresaInterface {
 

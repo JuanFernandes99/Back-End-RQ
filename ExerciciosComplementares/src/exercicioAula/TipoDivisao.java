@@ -1,4 +1,4 @@
-package exercicioEmpresa;
+package exercicioAula;
 
 //enumerador
 public enum TipoDivisao {
