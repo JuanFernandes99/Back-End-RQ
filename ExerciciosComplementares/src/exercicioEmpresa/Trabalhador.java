@@ -1,4 +1,4 @@
-package exercicioAula;
+package exercicioEmpresa;
 
 public class Trabalhador implements TrabalhadorInterface {
 	private String nome;

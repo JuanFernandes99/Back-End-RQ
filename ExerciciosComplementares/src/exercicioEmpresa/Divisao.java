@@ -1,4 +1,4 @@
-package exercicioAula;
+package exercicioEmpresa;
 
 //tipo (wc,cozinha)
 public class Divisao {
