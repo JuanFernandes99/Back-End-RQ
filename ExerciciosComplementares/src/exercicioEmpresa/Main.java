@@ -1,4 +1,4 @@
-package exercicioAula;
+package exercicioEmpresa;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,15 +35,21 @@ public class Main {
 		pastelaria.adicionarTrabalhador(trabalhador3);
 		pastelaria.adicionarTrabalhador(trabalhador4);
 		pastelaria.adicionarTrabalhador(trabalhador5);
+
+		Chefe chefe1 = new Chefe("Juan", 5000, "Chefe", false);
+
 		System.out.println("\nSaldo inicial da Empresa: " + pastelaria.getFundoDeCaixa() + "Ä\n");
-		
+
+		chefe1.setPagarFuncionario(true);
+
 		for (Trabalhador trb : pastelaria.getTrabalhadores()) {
 			trb.trabalhar();
 
 		}
 		System.out.println("\n… dia de receber!\n");
 
-		pastelaria.pagarTrabalhadores();
+			pastelaria.pagarTrabalhadores(chefe1);
+
 		for (Trabalhador trb : pastelaria.getTrabalhadores()) {
 			System.out.println("Trabalhador: " + trb.getNome() + ", Cargo: " + trb.getCargo() + ", Carteira: "
 					+ trb.getCarteira() + "Ä");

@@ -1,4 +1,4 @@
-package exercicioAula;
+package exercicioEmpresa;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,7 +29,6 @@ public class Empresa implements EmpresaInterface {
 
 	}
 
-
 	@Override
 	public void cobraClientes(double aValor) {
 		fundoDeCaixa += aValor;
@@ -37,20 +36,23 @@ public class Empresa implements EmpresaInterface {
 	}
 
 	@Override
-	public void pagarTrabalhadores() {
+	public void pagarTrabalhadores(Chefe aChefe) {
 		double totalAPagarSalarios = 0;
 		for (Trabalhador trb : trabalhadores) {
-
 			totalAPagarSalarios += trb.getSalario(); // soma dos salarios
 		}
-		if (totalAPagarSalarios <= fundoDeCaixa) {
-			for (Trabalhador trb : trabalhadores) { // Pode ser apenas isso sem verificação
-				trb.recebeSalario();
-				fundoDeCaixa -= trb.getSalario();
 
+		if (totalAPagarSalarios <= fundoDeCaixa) {
+			if (aChefe.isPagarFuncionario()) {
+				for (Trabalhador trb : trabalhadores) { // Pode ser apenas isso sem verificação
+					trb.recebeSalario();
+					fundoDeCaixa -= trb.getSalario();
+
+				}
+			} else {
+				System.out.print("Dinheiro insuficiente para pagar aos trabalhadores");
 			}
-		} else {
-			System.out.print("Dinheiro insuficiente para pagar aos trabalhadores");
+
 		}
 
 	}

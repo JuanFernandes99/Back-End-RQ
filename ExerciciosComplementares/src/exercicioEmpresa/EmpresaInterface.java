@@ -1,8 +1,8 @@
-package exercicioAula;
+package exercicioEmpresa;
 
 public interface EmpresaInterface {
 
-	public void pagarTrabalhadores();
+	public void pagarTrabalhadores(Chefe aChefe);
 
 	public void cobraClientes(double aValor);
 
