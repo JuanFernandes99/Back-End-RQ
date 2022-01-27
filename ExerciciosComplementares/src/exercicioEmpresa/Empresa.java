@@ -61,8 +61,8 @@ public class Empresa implements EmpresaInterface {
 
 				}
 			} else {
-				System.out.print("Dinheiro insuficiente para pagar aos trabalhadores");
-
+				System.out.println("Dinheiro insuficiente para pagar aos trabalhadores");
+				aChefe.setPagarFuncionario(true);
 			}
 
 		}

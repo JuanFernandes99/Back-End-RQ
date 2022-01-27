@@ -46,7 +46,7 @@ public class Main {
 
 		System.out.println("\nSaldo inicial da Empresa: " + pastelaria.getFundoDeCaixa() + "Ä\n");
 
-		chefe1.setPagarFuncionario(true);
+		
 
 		for (Trabalhador trb : pastelaria.getTrabalhadores()) {
 			trb.trabalhar();
@@ -55,14 +55,16 @@ public class Main {
 		System.out.println("\n… dia de receber!\n");
 
 		pastelaria.pagarTrabalhadores(chefe1);
-
+		pastelaria.pagarTrabalhadores(chefe1);
 		for (Trabalhador trb : pastelaria.getTrabalhadores()) {
 			System.out.println("Trabalhador: " + trb.getNome() + ", Cargo: " + trb.getCargo() + ", Carteira: "
 					+ trb.getCarteira() + "Ä");
 
 		}
+		
 		System.out.println("\nSaldo atual da Empresa: " + pastelaria.getFundoDeCaixa() + "Ä");
-		System.out.println(pastelaria.getTrabalhadores());
+		
+		
 		pastelaria.ApagaTrabalhador();
 		System.out.println(pastelaria.getTrabalhadores());
 
