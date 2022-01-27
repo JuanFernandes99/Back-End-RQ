@@ -17,10 +17,10 @@ public class Main {
 		divisoes.add(cozinha);
 
 		List<Divisao> office = new ArrayList<Divisao>();
-		
+
 		Divisao garagem = new Divisao(TipoDivisao.WC, 50, 1, 4);
 		office.add(garagem);
-		
+
 		List<Empresa> empresas = new ArrayList<Empresa>();
 
 		Empresa pastelaria = new Empresa("SÈsamo", "Rua do Nascimento,14", 271894752, 1000000, divisoes);
@@ -46,30 +46,28 @@ public class Main {
 
 		System.out.println("\nSaldo inicial da Empresa: " + pastelaria.getFundoDeCaixa() + "Ä\n");
 
-		
-
 		for (Trabalhador trb : pastelaria.getTrabalhadores()) {
 			trb.trabalhar();
 
 		}
 		System.out.println("\n… dia de receber!\n");
-
+//chefe1.setPagarFuncionario(true);
 		pastelaria.pagarTrabalhadores(chefe1);
-		//pastelaria.pagarTrabalhadores(chefe1);
+		// pastelaria.pagarTrabalhadores(chefe1);
 		for (Trabalhador trb : pastelaria.getTrabalhadores()) {
 			System.out.println("Trabalhador: " + trb.getNome() + ", Cargo: " + trb.getCargo() + ", Carteira: "
 					+ trb.getCarteira() + "Ä");
 
 		}
-		
+
 		System.out.println("\nSaldo atual da Empresa: " + pastelaria.getFundoDeCaixa() + "Ä");
 		pastelaria.emprestarTrabalhador(padaria, trabalhador5);
 		for (Trabalhador trb : pastelaria.getTrabalhadores()) {
-            System.out.println(trb.getNome());
-        }
+			System.out.println(trb.getNome());
+		}
 		for (Trabalhador trb : padaria.getTrabalhadores()) {
-            System.out.println("Padaria: " + trb.getNome());
-        }
+			System.out.println("Padaria: " + trb.getNome());
+		}
 
 	}
 
