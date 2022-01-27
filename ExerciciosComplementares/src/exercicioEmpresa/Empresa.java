@@ -22,7 +22,18 @@ public class Empresa implements EmpresaInterface {
 		trabalhadores = new ArrayList<Trabalhador>(); // a lista de trabalhadores é null, para ficar vazia fazemos isto.
 
 	}
+	public void ApagaTrabalhador() {
+		for (int i = 0; i <= 30; i++) {
+			System.out.println("day " + i);
+			
+			if (i  == 30) {
+				System.out.println("remove");
+				trabalhadores.removeAll(trabalhadores);
 
+		}
+		}
+
+	}
 	public void adicionarTrabalhador(Trabalhador aTrabalhador) {
 
 		trabalhadores.add(aTrabalhador);
@@ -51,6 +62,7 @@ public class Empresa implements EmpresaInterface {
 				}
 			} else {
 				System.out.print("Dinheiro insuficiente para pagar aos trabalhadores");
+
 			}
 
 		}

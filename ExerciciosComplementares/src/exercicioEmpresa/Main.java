@@ -16,12 +16,18 @@ public class Main {
 		divisoes.add(escritorio);
 		divisoes.add(cozinha);
 
+		List<Divisao> office = new ArrayList<Divisao>();
+		
+		Divisao garagem = new Divisao(TipoDivisao.WC, 50, 1, 4);
+		office.add(garagem);
+		
 		List<Empresa> empresas = new ArrayList<Empresa>();
 
 		Empresa pastelaria = new Empresa("SÈsamo", "Rua do Nascimento,14", 271894752, 1000000, divisoes);
+		Empresa padaria = new Empresa("Padaria", "Rua do Nascimento,14", 271894752, 1000000, office);
 
 		empresas.add(pastelaria);
-
+		empresas.add(padaria);
 		// sempre nomes explicativos
 
 		Trabalhador trabalhador1 = new Trabalhador("Juan", 500, "Operador");
@@ -48,7 +54,7 @@ public class Main {
 		}
 		System.out.println("\n… dia de receber!\n");
 
-			pastelaria.pagarTrabalhadores(chefe1);
+		pastelaria.pagarTrabalhadores(chefe1);
 
 		for (Trabalhador trb : pastelaria.getTrabalhadores()) {
 			System.out.println("Trabalhador: " + trb.getNome() + ", Cargo: " + trb.getCargo() + ", Carteira: "
@@ -56,6 +62,10 @@ public class Main {
 
 		}
 		System.out.println("\nSaldo atual da Empresa: " + pastelaria.getFundoDeCaixa() + "Ä");
+		System.out.println(pastelaria.getTrabalhadores());
+		pastelaria.ApagaTrabalhador();
+		System.out.println(pastelaria.getTrabalhadores());
+
 	}
 
 }
