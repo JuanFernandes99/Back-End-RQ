@@ -34,6 +34,15 @@ public class Empresa implements EmpresaInterface {
 		}
 
 	}
+	public void emprestarTrabalhador(Empresa aEmpresa, Trabalhador aTrabalhador) {
+		
+	    for (int i = 0; i < trabalhadores.size(); i++) {
+	      if (trabalhadores.get(i) == aTrabalhador) {  //.get =  position
+	        aEmpresa.adicionarTrabalhador(aTrabalhador);
+	        trabalhadores.remove(aTrabalhador);
+	      }
+	    }
+	  }
 	public void adicionarTrabalhador(Trabalhador aTrabalhador) {
 
 		trabalhadores.add(aTrabalhador);
@@ -62,7 +71,7 @@ public class Empresa implements EmpresaInterface {
 				}
 			} else {
 				System.out.println("Dinheiro insuficiente para pagar aos trabalhadores");
-				aChefe.setPagarFuncionario(true);
+				//aChefe.setPagarFuncionario(true);
 			}
 
 		}
