@@ -4,7 +4,7 @@ package resolucaoExercicios;
 
 import java.util.Scanner;
 
-public class Exercicio7_1 {
+public class Nome3PrimeirasLetras {
 	public static void main(String args[]) {
 		System.out.println("*** Pedir um nome e imprimir as 3 primeiras letras ***"); // Exercício
 

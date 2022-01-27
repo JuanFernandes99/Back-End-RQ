@@ -4,7 +4,7 @@ package resolucaoExercicios;
 
 import java.util.Scanner;
 
-public class Exercicio4 {
+public class Numeros0AteOMesmo {
 	public static void main(String args[]) {
 		System.out.println("*** Pedir um número e escrever na consola todos os números desde o 0 até ao mesmo ***"); // Exercício
 

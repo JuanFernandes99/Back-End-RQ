@@ -5,7 +5,7 @@ package resolucaoExercicios;
 import java.util.Calendar;
 import java.util.Scanner;
 
-public class Exercicio5 {
+public class IdadeAnoNascimento {
 	public static void main(String args[]) {
 		System.out.println("*** Calcular a idade atual a partir do ano de nascimento ***"); // Exercício
 

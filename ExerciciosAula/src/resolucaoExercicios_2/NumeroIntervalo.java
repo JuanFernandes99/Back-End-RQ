@@ -1,10 +1,10 @@
-package resolucaoExerciciosComplementares;
+package resolucaoExercicios_2;
 
 import java.util.Scanner;
 
 //Exercicio 4: Pedir um número e informar se este está no intervalo entre 50 e 100;
 
-public class Exercicio4 {
+public class NumeroIntervalo {
 	public static void main(String args[]) {
 		
 		System.out.println("Escreva um número e será informado se este está no intervalo entre 50 e 100");

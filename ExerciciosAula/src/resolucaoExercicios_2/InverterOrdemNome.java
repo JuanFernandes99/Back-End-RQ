@@ -1,10 +1,10 @@
-package resolucaoExerciciosComplementares;
+package resolucaoExercicios_2;
 
 import java.util.Scanner;
 
 //Exercicio 7 : Pedir o nome e inverter a ordem (João ->oãoJ);
 
-public class Exercicio7 {
+public class InverterOrdemNome {
 	public static void main(String args[]) {
 		System.out.println("*** Pedir o nome e inverter a ordem (João ->oãoJ) ***"); // Exercício
 

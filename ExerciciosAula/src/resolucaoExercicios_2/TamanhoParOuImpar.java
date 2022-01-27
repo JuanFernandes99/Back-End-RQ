@@ -1,9 +1,9 @@
-package resolucaoExerciciosComplementares;
+package resolucaoExercicios_2;
 //Exercicio 6 : Pedir o nome e escrever se o tamanho deste é par ou ímpar;
 
 import java.util.Scanner;
 
-public class Exercicio6 {
+public class TamanhoParOuImpar {
 	public static void main(String args[]) {
 		System.out.println("*** Pedir o nome completo e  escrever se o tamanho deste é par ou ímpar ***"); // Exercício
 

@@ -5,7 +5,7 @@ package resolucaoExercicios;
 
 import java.util.Scanner;
 
-public class Exercicio8 {
+public class NumerosOrdemInversa {
 	public static void main(String[] args) {
 
 		Scanner inputUtilizador = new Scanner(System.in);

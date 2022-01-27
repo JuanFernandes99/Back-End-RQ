@@ -1,10 +1,10 @@
-package resolucaoExerciciosComplementares;
+package resolucaoExercicios_2;
 
 import java.util.Scanner;
 
 //Exercicio 2: Pedir um número e devolver o seu antecessor e o seu sucessor;
 
-public class Exercicio2 {
+public class AntecessorESucessor {
 	public static void main(String args[]) {
 		System.out.println("Escreva um número e será retornado o seu antecessor e o seu sucessor");
 

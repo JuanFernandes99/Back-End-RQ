@@ -4,7 +4,7 @@ package resolucaoExercicios;
 
 import java.util.Scanner;
 
-public class Exercicio3 {
+public class PedirNumerosDevolveMaior {
 	public static void main(String args[]) {
 		System.out.println("*** Pedir dois números e devolver o maior ***"); // Exercício
 

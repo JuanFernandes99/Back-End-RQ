@@ -1,10 +1,10 @@
-package resolucaoExerciciosComplementares;
+package resolucaoExercicios_2;
 
 import java.util.Scanner;
 
 //Exercicio 5 : Pedir o nome completo e apresentar apenas o primeiro e o último nome;
 
-public class Exercicio5 {
+public class PrimeroeUltimoNome {
 public static void main(String args[]) {
 	System.out.println("*** Pedir o nome completo e apresentar apenas o primeiro e o último nome ***"); // Exercício
 

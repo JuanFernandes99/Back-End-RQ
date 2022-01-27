@@ -5,7 +5,7 @@ package resolucaoExercicios;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Exercicio6 {
+public class AleatorioAteONumero {
 	public static void main(String args[]) {
 		System.out.println("*** Geração de aleatórios ***"); // Exercício
 

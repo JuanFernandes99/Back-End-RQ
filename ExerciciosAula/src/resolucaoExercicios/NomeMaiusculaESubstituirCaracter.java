@@ -4,7 +4,7 @@ package resolucaoExercicios;
 
 import java.util.Scanner;
 
-public class Exercicio7 {
+public class NomeMaiusculaESubstituirCaracter {
 	public static void main(String args[]) {
 		System.out.println(
 				"*** Pedir um nome, colocar em maiúsculas, subsituir uma letra por um número e imprimir as 3 primeiras letras ***"); // Exercício

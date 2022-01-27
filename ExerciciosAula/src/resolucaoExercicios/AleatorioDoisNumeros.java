@@ -5,7 +5,7 @@ package resolucaoExercicios;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Exercicio6_1 {
+public class AleatorioDoisNumeros {
 	public static void main(String args[]) {
 		System.out.println("*** Geração de aleatórios (entre dois números) ***"); // Exercício
 

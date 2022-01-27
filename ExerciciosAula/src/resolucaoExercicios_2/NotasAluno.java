@@ -1,11 +1,11 @@
-package resolucaoExerciciosComplementares;
+package resolucaoExercicios_2;
 
 import java.util.Scanner;
 
 //Exercicio 3: Pedir o nome de um aluno e as notas das 3 frequências que ele teve numa cadeira. No final informar o nome do aluno e a sua média
 //(assumindo que as 3 frequências têm o mesmo peso). Informar ainda se o aluno passou (>=10 valores);
 
-public class Exercicio3 {
+public class NotasAluno {
 	public static void main(String args[]) {
 		System.out.println("Escreva o seu nome");
 
