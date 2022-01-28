@@ -1,7 +1,5 @@
 package resolucaoTeste2;
 
-
-
 public class Barco extends Reboque {
 
 	private int comprimento;

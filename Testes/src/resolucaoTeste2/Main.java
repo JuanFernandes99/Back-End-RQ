@@ -28,7 +28,7 @@ public class Main {
 
 		Reboque1.Avariar();
 		Reboque2.Avariar();
-		
+
 		System.out.println(
 				"\nNúmero total de reboques avariados da empresa: " + javaReboques.getNumReboquesAvariados() + "\n");
 

@@ -1,7 +1,5 @@
 package resolucaoTeste2;
 
-
-
 public class Carro extends Reboque {
 
 	private int numeroLugaresSentados;
