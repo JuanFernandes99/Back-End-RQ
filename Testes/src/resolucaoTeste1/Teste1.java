@@ -1,4 +1,4 @@
-package resolucaoTestes;
+package resolucaoTeste1;
 
 //Teste 1: Escreva um programa que pede ao utilizador dois números (inteiros). Com o maior destes, deve chamar uma função que some todos os números
 //desde o 0 até esse número (incluíndo). Esse número deve ser depois apresentado ao utilizador.
