@@ -19,15 +19,15 @@ public class Empresa implements EmpresaInterface {
 	}
 
 	public int getNumReboquesAvariados() {
-		int numReboquesAvariados = 0;
+		int numAvariados = 0;
 		for (Reboque rebo : reboques) {
 			if (rebo.isAvariado()) {
-				numReboquesAvariados++;
+				numAvariados++;
 
 			}
 		}
 
-		return numReboquesAvariados;
+		return numAvariados;
 	}
 
 	public String getNome() {
