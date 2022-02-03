@@ -2,9 +2,7 @@ package exerciciosException;
 
 public class SemNumeroException extends Exception
 {
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 1L;
 
 	public String getMessage() 
