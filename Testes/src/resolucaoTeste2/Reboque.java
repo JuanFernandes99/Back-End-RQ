@@ -6,7 +6,6 @@ public class Reboque {
 	protected int numTransporte;
 	protected int numServicos;
 
-
 	public Reboque(int aNumTransporte) { // Atributos obrigatórios são passados no construtor
 		numTransporte = aNumTransporte;
 
