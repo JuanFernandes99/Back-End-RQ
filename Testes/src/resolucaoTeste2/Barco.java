@@ -2,29 +2,32 @@ package resolucaoTeste2;
 
 public class Barco extends Reboque {
 
-	private int comprimento;
-	private int largura;
-
-	public Barco(int aNumeroTransporte, String aTipoReboque, int aComprimento, int aLargura) {
-		super(aNumeroTransporte, aTipoReboque);
+	private double comprimento;
+	private Double largura; // Double e não double, porque é opcional, e pode ser null (não definido)
+	
+	 // Construtor(es)
+	public Barco(int aNumTransporte,int aComprimento) {
+		super(aNumTransporte);
 		comprimento = aComprimento;
-		largura = aLargura;
 	}
+	  // Getters e Setters
 
-	public int getComprimento() {
+	public double getComprimento() {
 		return comprimento;
 	}
 
-	public int getLargura() {
+	public Double getLargura() {
 		return largura;
 	}
 
-	public void setComprimento(int aComprimento) {
-		this.comprimento = aComprimento;
+	public void setComprimento(double aComprimento) {
+		comprimento = aComprimento;
 	}
 
-	public void setLargura(int aLargura) {
-		this.largura = aLargura;
+	public void setLargura(Double aLargura) {
+		largura = aLargura;
 	}
+	
+
 
 }

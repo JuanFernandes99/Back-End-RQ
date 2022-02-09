@@ -1,8 +1,7 @@
 package resolucaoTeste2;
 
-public interface EmpresaInterface {
+public interface IEmpresaReboques {
 
 	public int getNumReboques();
-
 	public int getNumReboquesAvariados();
 }

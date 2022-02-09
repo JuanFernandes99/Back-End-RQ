@@ -1,65 +1,62 @@
 package resolucaoTeste2;
 
 public class Reboque {
-	private boolean isAvariado;
-	protected int numeroTransporte;
-	protected int numeroServicos;
-	protected String tipoReboque;
-	protected int quantidadeAvariados;
 
-	public Reboque(int aNumeroTransporte, String aTipoReboque) {
-		numeroTransporte = aNumeroTransporte;
-		tipoReboque = aTipoReboque;
-		numeroServicos = 0;
+	private boolean isAvariado;
+	protected int numTransporte;
+	protected int numServicos;
+
+	public Reboque(int aNumTransporte) { // Atributos obrigatórios são passados no construtor
+		numTransporte = aNumTransporte;
+
+		// Inicialização das variáveis que não são passadas como argumentos do
+		// construtor
+		numServicos = 0;
+		isAvariado = false;
 
 	}
 
 	public void trabalhar() {
-		if (isAvariado == false) {
-			numeroServicos++;
-			System.out.print("Eu, " + tipoReboque + " numero " + numeroTransporte + " estou a trabalhar, ");
+		if (!isAvariado) // isAvariado == false
+		{
+			numServicos++;
+			System.out.println("Eu, o carro/barco número " + numTransporte + " estou a trabalhar!");
 		} else {
-			System.out.print(
-					"Eu, " + tipoReboque + " numero " + numeroTransporte + " estou avariado, não consigo  trabalhar, ");
+			apresentaMensagemAvariado();
 		}
 	}
 
-	public void Avariar() {
-		quantidadeAvariados++;
+	public void avariar() {
 		isAvariado = true;
-		System.out.println("\nEu número, " + numeroTransporte + " estou avariado!, não poderei trabalhar");
+		apresentaMensagemAvariado();
 	}
 
-	public int getNumeroTransporte() {
-		return numeroTransporte;
+	private void apresentaMensagemAvariado() {
+		System.out.println("Eu, o carro/barco número " + numTransporte + " estou avariado, não poderei trabalhar!");
 	}
 
-	public int getNumeroServicos() {
-		return numeroServicos;
+	public int getNumTransporte() {
+		return numTransporte;
+	}
+
+	public int getNumServicos() {
+		return numServicos;
 	}
 
 	public boolean isAvariado() {
 		return isAvariado;
 	}
 
-	public void setNumeroTransporte(int aNumeroTransporte) {
-		this.numeroTransporte = aNumeroTransporte;
+	public void setNumeroTransporte(int aNumTransporte) {
+		this.numTransporte = aNumTransporte;
 	}
 
-	public void setNumeroServicos(int aNumeroServicos) {
-		this.numeroServicos = aNumeroServicos;
+	public void setNumeroServicos(int aNumServicos) {
+		this.numServicos = aNumServicos;
 	}
 
 	public void setPagarFuncionario(boolean aIsAvariado) {
 		this.isAvariado = aIsAvariado;
-	}
-
-	public int getQuantidadeAvariados() {
-		return quantidadeAvariados;
-	}
-
-	public void setQuantidadeAvariados(int quantidadeAvariados) {
-		this.quantidadeAvariados = quantidadeAvariados;
 	}
 
 }

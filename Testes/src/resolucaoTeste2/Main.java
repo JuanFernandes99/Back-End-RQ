@@ -1,43 +1,48 @@
 package resolucaoTeste2;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Main {
 
 	public static void main(String[] args) {
-		List<Reboque> reboques = new ArrayList<Reboque>();
-		Reboque Reboque1 = new Carro(001, "Carro", 100, 0);
-		Reboque Reboque2 = new Carro(002, "Carro", 200, 0);
-		Reboque Reboque3 = new Barco(003, "Barco", 300, 0);
-		Reboque Reboque4 = new Barco(004, "Barco", 400, 0);
 
-		reboques.add(Reboque1);
-		reboques.add(Reboque2);
-		reboques.add(Reboque3);
-		reboques.add(Reboque4);
+		// Criar a empresa javaReboques
+		EmpresaReboques javaReboques = new EmpresaReboques("javaReboques", 254254254);
 
-		Empresa javaReboques = new Empresa("javaReboques", reboques);
+		// Criar, por exemplo, 2 carros e 2 barcos;
+		Carro carro1 = new Carro(1, 7500);
+		Carro carro2 = new Carro(2, 5000);
 
-		System.out.println("Número total de reboques da empresa: " + javaReboques.getNumReboques() + "\n");
+		Barco barco1 = new Barco(3, 30);
+		Barco barco2 = new Barco(4, 50);
 
-		for (Reboque rebo : reboques) {
-			rebo.trabalhar();
-			System.out.println("número de serviços: " + rebo.getNumeroServicos());
+		// Associar os reboques criados à empresa
+		javaReboques.addReboque(carro1);
+		javaReboques.addReboque(carro2);
+		javaReboques.addReboque(barco1);
+		javaReboques.addReboque(barco2);
+
+		// Obter o número total de reboques que a empresa tem
+		System.out.println("A empresa tem " + javaReboques.getNumReboques() + " reboques!");
+		System.out.println("\n"); // Apenas serve para separar e identificar melhor na consola
+
+		// Colocar todos os reboques a trabalhar
+		// Poderia ser feita uma função dentro da classe EmpresaReboques ou através de
+		// um for/foreach
+		javaReboques.todosReboquesTrabalhar();
+		System.out.println("\n");
+
+		// Definir que um reboque qualquer está avariado
+		javaReboques.getReboques().get(1).avariar();
+		System.out.println("\n");
+
+		// Colocar todos os reboques a trabalhar novamente
+		javaReboques.todosReboquesTrabalhar();
+		System.out.println("\n");
+
+		// Validar o número de serviços de cada reboque
+		// Poderia ser feita uma função dentro da classe EmpresaReboques ou ser assim
+		for (Reboque reb : javaReboques.getReboques()) {
+			System.out.println("Eu, o carro/barco número " + reb.getNumTransporte() + " efectuei "
+					+ reb.getNumServicos() + " serviços!");
 		}
-
-		Reboque1.Avariar();
-		Reboque2.Avariar();
-
-		System.out.println(
-				"\nNúmero total de reboques avariados da empresa: " + javaReboques.getNumReboquesAvariados() + "\n");
-
-		for (Reboque rebo : reboques) {
-			rebo.trabalhar();
-			System.out.println("número de serviços: " + rebo.getNumeroServicos());
-
-		}
-
 	}
-
 }

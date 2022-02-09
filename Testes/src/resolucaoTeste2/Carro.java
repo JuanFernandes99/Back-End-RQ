@@ -2,29 +2,28 @@ package resolucaoTeste2;
 
 public class Carro extends Reboque {
 
-	private int numeroLugaresSentados;
-	private int pesoMaximoRebocavel;
+	private Integer numLugaresSentados; // Integer e não int, porque é opcional, e pode ser null (não definido)
+	private double pesoMaxRebocavel;
 
-	public Carro(int aNumeroTransporte, String aTipoReboque, int aNumeroLugaresSentados, int aPesoMaximoRebocavel) {
-		super(aNumeroTransporte, aTipoReboque);
-		numeroLugaresSentados = aNumeroLugaresSentados;
-		pesoMaximoRebocavel = aPesoMaximoRebocavel;
+	public Carro(int aNumTransporte,double aPesoMaxRebocavel) {
+		super(aNumTransporte);
+		pesoMaxRebocavel = aPesoMaxRebocavel;
 	}
 
 	public int getNumeroLugaresSentados() {
-		return numeroLugaresSentados;
+		return numLugaresSentados;
 	}
 
-	public int getPesoMaximoRebocavel() {
-		return pesoMaximoRebocavel;
+	public double getPesoMaximoRebocavel() {
+		return pesoMaxRebocavel;
 	}
 
 	public void setNumeroLugaresSentados(int aNumeroLugaresSentados) {
-		this.numeroLugaresSentados = aNumeroLugaresSentados;
+		this.numLugaresSentados = aNumeroLugaresSentados;
 	}
 
-	public void setPesoMaximoRebocavel(int aPesoMaximoRebocavel) {
-		this.pesoMaximoRebocavel = aPesoMaximoRebocavel;
+	public void setPesoMaximoRebocavel(double aPesoMaxRebocavel) {
+		this.pesoMaxRebocavel = aPesoMaxRebocavel;
 	}
 
 }
