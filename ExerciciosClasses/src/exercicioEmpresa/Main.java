@@ -37,6 +37,7 @@ public class Main {
 		Trabalhador trabalhador5 = new Trabalhador("Sara", 5000, "Contabilista");
 
 		pastelaria.adicionarTrabalhador(trabalhador1);
+		pastelaria.adicionarTrabalhador(trabalhador1);
 		pastelaria.adicionarTrabalhador(trabalhador2);
 		pastelaria.adicionarTrabalhador(trabalhador3);
 		pastelaria.adicionarTrabalhador(trabalhador4);

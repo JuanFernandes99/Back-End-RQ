@@ -1,4 +1,4 @@
-package stream;
+package stream_Exercicio;
 
 import java.util.Arrays;
 import java.util.List;
