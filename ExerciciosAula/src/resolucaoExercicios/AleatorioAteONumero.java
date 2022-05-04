@@ -14,12 +14,22 @@ public class AleatorioAteONumero {
 		System.out.println("Escreva um número: ");
 		int numero = consola.nextInt();
 
+		int soma = soma(numero);
 		int aleatorioGerado = geraAleatorio(numero); // chamada à função
 
+		System.out.println(soma);
 		System.out.println("O seu número aleatório até " + numero + " é: " + aleatorioGerado);
 
 		consola.close();
 
+	}
+
+	public static int soma(int n) {
+		if (n == 0)
+			return 0;
+		else
+			System.out.println(n + soma(n - 1));
+		return n + soma(n - 1);
 	}
 
 	public static int geraAleatorio(int aNumeroMaximo) {
